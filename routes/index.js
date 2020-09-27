@@ -22,7 +22,7 @@ anime.post("/anime", async (req, res) => {
 
 		return res.status(200).json({ anime: result });
 	} catch (error) {
-		console.log(e);
+		console.log(error);
 		return res.status(400).json({ msg: "Unable to make request" });
 	}
 });
